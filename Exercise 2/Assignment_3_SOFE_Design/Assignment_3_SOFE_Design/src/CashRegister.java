@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class CashRegister {
     private int UPCcode;
     private Display display;
@@ -15,9 +13,6 @@ public class CashRegister {
     public Product getCurrentProductInfo(){
         ProductDB db = new ProductDB();
         Product product = db.GetProductInfo(this.UPCcode);
-//        String text = "Product Name: " + product.getName() + " Product Price: " + Double.toString(product.getPrice());
-//        display.displayText(text);
-//        printer.displayText(text);
         display.displayProduct(product);
         printer.displayProduct(product);
         return  product;

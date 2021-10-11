@@ -14,7 +14,6 @@ public class TicketPrinter implements View {
         }
 
     }
-
     @Override
     public void displayProduct(Product product) {
         String text = "Product Name: " + product.getName() + " Product Price: " + Double.toString(product.getPrice());
